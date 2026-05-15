@@ -186,6 +186,58 @@
     -webkit-text-fill-color: transparent;
     font-weight: bold;
   }
+  .tab-subtitle{
+    padding: 6px 14px;
+    display: inline-block;
+    font-weight: bold;
+    border: 2px dashed var(--espresso);
+    background-size: 300% 100%;
+    animation: gradientShift 6s ease infinite;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.25);
+  }
+  /* Per-tab themed rainbow subtitles */
+  #tab-ribbon .tab-subtitle{
+    background-image: linear-gradient(90deg, var(--watermelon), var(--watermelon-light), var(--tangerine-light), var(--watermelon));
+    color: var(--espresso);
+    border-color: var(--watermelon);
+    text-shadow: 1px 1px 0 #fff;
+  }
+  #tab-skate .tab-subtitle{
+    background-image: linear-gradient(90deg, var(--watermelon), var(--radiant), var(--nude), var(--bermuda), var(--watermelon));
+    color: #fff;
+    border-color: var(--bermuda);
+    text-shadow: 1px 1px 0 var(--afterdark), 0 0 6px var(--afterdark);
+  }
+  #tab-bushlympics .tab-subtitle{
+    background-image: linear-gradient(90deg, var(--nude), var(--bermuda), var(--espresso), var(--friction), var(--watermelon), var(--nude));
+    color: #fff;
+    border-color: var(--espresso);
+    text-shadow: 1px 1px 0 var(--espresso), -1px -1px 0 var(--espresso);
+  }
+  #tab-bushbash .tab-subtitle{
+    background-image: linear-gradient(90deg, var(--afterdark), var(--radiant), var(--afterdark), var(--radiant));
+    color: var(--bermuda);
+    border-color: var(--bermuda);
+    text-shadow: 1px 1px 0 #000;
+  }
+  #tab-after .tab-subtitle{
+    background-image: linear-gradient(90deg, var(--bermuda), var(--tangerine), var(--watermelon), var(--bermuda));
+    color: var(--afterdark);
+    border-color: var(--watermelon);
+    text-shadow: 1px 1px 0 #fff;
+  }
+  #tab-hotel .tab-subtitle{
+    background-image: linear-gradient(90deg, var(--nude), var(--roller), var(--radiant), var(--watermelon), var(--nude));
+    color: #fff;
+    border-color: var(--bermuda);
+    text-shadow: 1px 1px 0 var(--afterdark);
+  }
+  #tab-fit .tab-subtitle{
+    background-image: linear-gradient(90deg, var(--watermelon), var(--radiant), var(--tangerine), var(--bermuda), var(--watermelon));
+    color: var(--espresso);
+    border-color: var(--espresso);
+    text-shadow: 1px 1px 0 #fff;
+  }
   .info-card{
     background: #fff;
     border: 3px dashed var(--espresso);
@@ -529,7 +581,7 @@
   <section id="tab-ribbon" class="tab-content">
     <h2 class="section-title">✂️ OFFICE RIBBON CUTTING ✂️</h2>
     <div class="scissor-row"><span>✂️</span><span>🎀</span><span>✂️</span><span>🎀</span><span>✂️</span><span>🎀</span><span>✂️</span></div>
-    <p style="text-align:center; font-size: 18px;"><span class="rainbow-text">Big scissors. Bigger ribbon. Biggest energy.</span></p>
+    <p style="text-align:center; font-size: 18px;"><span class="tab-subtitle">Big scissors. Bigger ribbon. Biggest energy.</span></p>
 
     <div class="info-card">
       <h3>🗓️ When & Where</h3>
@@ -556,7 +608,7 @@
   <section id="tab-skate" class="tab-content">
     <h2 class="section-title">🛼 ROLLER SKATING NIGHT 🛼</h2>
     <div class="roller-disco"></div>
-    <p style="text-align:center; font-size: 18px;"><span class="rainbow-text">Disco lights. Wheels. Bruises that are TOTALLY worth it.</span></p>
+    <p style="text-align:center; font-size: 18px;"><span class="tab-subtitle">Disco lights. Wheels. Bruises that are TOTALLY worth it.</span></p>
 
     <div class="info-card">
       <h3>🗓️ When & Where</h3>
@@ -589,7 +641,7 @@
   <section id="tab-bushlympics" class="tab-content">
     <h2 class="section-title">🏅 THE BUSHLYMPICS 🏅</h2>
     <div class="bushlympics-rings"><span>◯</span><span>◯</span><span>◯</span><span>◯</span><span>◯</span></div>
-    <p style="text-align:center; font-size: 18px;"><span class="rainbow-text">An athletic event held to crown one team as the BEST.</span></p>
+    <p style="text-align:center; font-size: 18px;"><span class="tab-subtitle">An athletic event held to crown one team as the BEST.</span></p>
 
     <div class="info-card">
       <h3>🗓️ When & Where</h3>
@@ -608,8 +660,13 @@
       <p>Athletic-ish clothing, sneakers you don't mind getting grass-stained. Your team will get matching bandanas when you arrive. Yes you have to wear it. No exceptions. <span class="blink">★</span></p>
     </div>
 
+    <div class="info-card">
+      <h3>☀️ We've Got You Covered</h3>
+      <p><strong>Sunscreen, bug spray, and hydration stations provided.</strong> Show up, slather up, drink up. We've got you, boo. 😉</p>
+    </div>
+
     <h2 class="section-title" style="margin-top:32px;">🥗 RECOVERY LUNCH 🥗</h2>
-    <p style="text-align:center; font-size: 18px;"><span class="rainbow-text">You've earned this sandwich.</span></p>
+    <p style="text-align:center; font-size: 18px;"><span class="tab-subtitle">You've earned this sandwich.</span></p>
 
     <div class="info-card">
       <h3>🗓️ When & Where</h3>
@@ -636,17 +693,17 @@
   <section id="tab-bushbash" class="tab-content">
     <h2 class="section-title">🔥 THE BUSHBASH 🔥</h2>
     <div class="fire-strip"></div>
-    <p style="text-align:center; font-size: 18px;"><span class="rainbow-text">The main event. The reason your calendar said "OOO" on Friday.</span></p>
+    <p style="text-align:center; font-size: 18px;"><span class="tab-subtitle">The main event. The reason your calendar said "OOO" on Friday.</span></p>
 
     <div class="info-card">
       <h3>🗓️ When & Where</h3>
       <p><strong>Thursday, June 18, 2026 • 5:15 PM – 10:30 PM</strong><br><br>
-      Everyone meets at <strong>5:15pm at the Hyatt Place Ottawa-West </strong> - 300 Moodie Dr., Ottawa, ON. <br><br> For those not staying at the hotel, please <strong> UBER </strong> to the hotel. <br><br>
+      Everyone meets at <strong>5:15pm</strong> at the <strong>Hyatt Place Ottawa-West </strong> - 300 Moodie Dr., Ottawa, ON. <br><br> For those not staying at the hotel, please <strong> UBER </strong> to the hotel. <br><br>
     </div>
 
     <div class="info-card">
       <h3>The Shuttle</h3>
-      <p> The Shuttle from the hotel to the event will be leaving at <strong>5:30 PM.</strong></p>
+      <p> The shuttle from the hotel to the event will be leaving at <strong>5:30 PM.</strong></p>
     </div>
 
 
@@ -654,20 +711,20 @@
       <h3>🍸 What's Happening</h3>
       <ul>
         <li><strong>The most anticipated event of the season!</strong> — Sorry we're still not telling you.</li>
-        <li><strong>Dinner Provided</strong> — Come Hungry, dietary restrictions are being respected and looked after, fear not.</li>
-        <li><strong>Open Bar</strong> — Bushbalm-themed drinks ("Vajacial Cooler" might be on the menu and there's nothing you can do about it)</li>
-        <li><strong>Alot of Activites</strong> — Oh, you thought the competition was over? We're just getting started.</li>
-        <li><strong>Music will be pumping</strong> — Show us ur best moves.</li>
+        <li><strong>Dinner is Provided</strong> — Come Hungry, dietary restrictions are being respected and looked after, fear not.</li>
+        <li><strong>Open Bar</strong> — "Vajacial Cooler" might be on the menu and there's nothing you can do about it.</li>
+        <li><strong>Activites</strong> — Oh, you thought the competition was over? We're just getting started.</li>
+        <li><strong>Music will be bumping</strong> — Drop it like it's hot.</li>
       </ul>
     </div>
 
     <div class="info-card">
       <h3>The Shuttle Return Schedule</h3>
-      <p> The Shuttle back to the hotel (and convienietly also the after party 😉) <br><br> <strong> Schedule: 9:30 PM, 10:00 PM, 10:30 PM, 11:00 PM </strong></p>
+      <p> The Shuttle back to the hotel (and conveniently also to the after party 😉) <br><br> <strong> Schedule: 9:30 PM, 10:00 PM, 10:30 PM, 11:00 PM </strong></p>
     </div>
 
     <div class="warning-box">
-      DRESS CODE: Y2K boho with cowboy energy (that you can move in). SEE THE "WHAT TO WEAR" TAB.
+      DRESS CODE: Y2K Boho with Cowboy Energy [that you can move in]. SEE THE "WHAT TO WEAR" TAB.
     </div>
     <div class="fire-strip"></div>
   </section>
@@ -675,7 +732,7 @@
   <!-- ============ AFTERPARTY ============ -->
   <section id="tab-after" class="tab-content">
     <h2 class="section-title">🪩 THE AFTERPARTY 🪩</h2>
-    <p style="text-align:center; font-size: 18px; color: var(--bermuda);"><span class="rainbow-text">For the chosen ones who can hang.</span></p>
+    <p style="text-align:center; font-size: 18px; color: var(--bermuda);"><span class="tab-subtitle">For the chosen ones who can hang.</span></p>
 
     <div class="info-card">
       <h3>🗓️ When & Where</h3>
@@ -709,7 +766,7 @@
   <!-- ============ HOTEL ============ -->
   <section id="tab-hotel" class="tab-content">
     <h2 class="section-title">🏨 HOTEL & TRAVEL 🏨</h2>
-    <p style="text-align:center; font-size: 18px;"><span class="rainbow-text">For our beloved out-of-towners.</span></p>
+    <p style="text-align:center; font-size: 18px;"><span class="tab-subtitle">For our beloved out-of-towners.</span></p>
 
     <div class="info-card">
       <h3>✈️ Flying In</h3>
@@ -747,13 +804,14 @@
         <li>Your favourite Bushbalm product, naturally</li>
         <li>A charger. You will forget your charger. Bring two.</li>
       </ul>
+      <p style="margin-top: 12px; font-weight: bold; text-align: center;"><span class="blink">★</span> LEAVE LOTS OF ROOM IN YOUR LUGGAGE FOR MERCH &amp; GOODIES TO TAKE HOME!!! <span class="blink">★</span></p>
     </div>
   </section>
 
   <!-- ============ WHAT TO WEAR ============ -->
   <section id="tab-fit" class="tab-content">
     <h2 class="section-title">👕 WHAT TO WEAR 👕</h2>
-    <p style="text-align:center; font-size: 18px;"><span class="rainbow-text">A.k.a. "The Outfit Brief"</span></p>
+    <p style="text-align:center; font-size: 18px;"><span class="tab-subtitle">A.k.a. "The Outfit Brief"</span></p>
 
     <div class="info-card">
       <h3>✂️ Office Ribbon Cutting + Lunch</h3>
