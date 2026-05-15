@@ -7,6 +7,10 @@
 <link rel="icon" type="image/png" href="Bicon.png">
 <link rel="shortcut icon" type="image/png" href="Bicon.png">
 <link rel="apple-touch-icon" href="Bicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Bowlby+One&display=swap" rel="stylesheet">
 <style>
   /* ============ BRAND COLOR VARIABLES ============ */
   :root{
@@ -32,7 +36,7 @@
   /* ============ THE STARRY GEOCITIES BACKGROUND ============ */
   html, body{margin:0;padding:0;}
   body{
-    font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", cursive;
+    font-family: "Comic Neue", "Comic Sans MS", "Chalkboard SE", "Marker Felt", system-ui, sans-serif;
     background:
       radial-gradient(2px 2px at 20px 30px, #fff, transparent),
       radial-gradient(2px 2px at 80px 90px, var(--bermuda), transparent),
@@ -86,7 +90,7 @@
   }
   header h1{
     margin: 0;
-    font-family: "Impact", "Comic Sans MS", sans-serif;
+    font-family: "Bowlby One", "Impact", "Comic Neue", sans-serif;
     font-size: clamp(28px, 5vw, 56px);
     letter-spacing: 1px;
     color: #fff;
@@ -145,7 +149,7 @@
     flex: 1 1 auto;
     min-width: 110px;
     padding: 10px 12px;
-    font-family: "Comic Sans MS", cursive;
+    font-family: "Comic Neue", "Comic Sans MS", system-ui, sans-serif;
     font-size: 13px;
     font-weight: bold;
     color: var(--espresso);
@@ -172,7 +176,7 @@
   @keyframes fadeIn{ from{opacity:0; transform: translateY(8px);} to{opacity:1; transform: translateY(0);} }
 
   h2.section-title{
-    font-family: "Impact", sans-serif;
+    font-family: "Bowlby One", "Impact", sans-serif;
     font-size: 36px;
     text-align: center;
     margin: 0 0 8px;
@@ -480,7 +484,15 @@
   .warning-box::after{ content: " ⚠️"; }
 
   @media (max-width: 640px){
-    .tab-btn{ font-size: 11px; padding: 8px 6px; min-width: 80px;}
+    .tabs{ gap: 6px; padding: 8px 6px 0;}
+    .tab-btn{
+      font-size: 15px;
+      font-weight: 700;
+      padding: 12px 10px;
+      min-width: 0;
+      flex: 1 1 calc(50% - 6px);
+      letter-spacing: 0;
+    }
     .cd-block{ min-width: 70px; padding: 12px 8px;}
     .header-gifs{ position: static; justify-content: center; max-width: 100%; margin-top: 10px;}
   }
@@ -657,7 +669,7 @@
 
     <div class="info-card">
       <h3>👟 Wear Comfy Stuff</h3>
-      <p>Athletic-ish clothing, sneakers you don't mind getting grass-stained. Your team will get matching bandanas when you arrive. Yes you have to wear it. No exceptions. <span class="blink">★</span></p>
+      <p>Athletic-ish clothing, sneakers you don't mind getting grass-stained. Your team will get matching bandanas when you arrive. Yes you have to wear it, yes you have to participate. <span class="blink">★</span>  No exceptions. <span class="blink">★</span></p>
     </div>
 
     <div class="info-card">
@@ -853,17 +865,17 @@
 
     <div class="info-card">
       <h3>Can I bring a +1?</h3>
-      <p><strong>No.</strong> This is a very exclusive, very private, very ✨ team-only ✨ event. We love your partner / friend / cat / fish but they cannot come. They can have you back on Friday.</p>
+      <p><strong>No.</strong> This is a very exclusive, very private, very ✨ team-only ✨ event. We love your partner / friend / cat / fish / dog / pet rock, but they cannot come. They can have you back on Friday.</p>
     </div>
 
     <div class="info-card">
       <h3>Is this whole thing mandatory?</h3>
-      <p>It's strongly encouraged but life happens — let your manager and our beloved office coordinator <strong>Sam</strong> know if you can't make it. We'll pour one out for you.</p>
+      <p>It's strongly encouraged but life happens. Let your manager and our beloved office coordinator <strong>Samantha Carter</strong> know if you can't make it. We'll pour one out for you. 🫗</p>
     </div>
 
     <div class="info-card">
       <h3>What if I have dietary restrictions?</h3>
-      <p>We've already got your dietary needs on file — vegan, vegetarian, gluten-free, and major allergen options are sorted for every meal. <strong>If anything has changed,</strong> reach out to our office coordinator <strong>Sam</strong> and they'll update your file.</p>
+      <p>We've already got your dietary needs on file. Vegan, vegetarian, gluten-free, and major allergen options are sorted for every meal. <strong>If anything has changed,</strong> reach out to our office coordinator <strong>Samantha Carter</strong> and they'll update your file.</p>
     </div>
 
     <div class="info-card">
