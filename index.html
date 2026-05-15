@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BUSHBALM 10 YEAR SUMMER BLOWOUT 2026</title>
+<meta name="description" content="The OFFICIAL BushBalm 10-Year Anniversary Summer Party Web Site. Surf's up. Bushlympics await.">
+<link rel="icon" type="image/png" href="Bicon.png">
+<link rel="shortcut icon" type="image/png" href="Bicon.png">
+<link rel="apple-touch-icon" href="Bicon.png">
+<style>
+  /* ============ BRAND COLOR VARIABLES ============ */
+  :root{
+    --espresso:#271710; --espresso-light:#A6948B;
+    --sienna:#CCA181; --sienna-light:#E1CAB9;
+    --ivory:#F8E2C9; --ivory-light:#FDF5EC;
+    --stone:#F0ECEA; --stone-light:#F9F9F9;
+    --nude:#8EBEE6; --nude-light:#D8E8F6;
+    --bermuda:#EEE253; --bermuda-light:#F7F0AB;
+    --tangerine:#FF9900; --tangerine-light:#FAC56D;
+    --watermelon:#FF808B; --watermelon-light:#FFB9BF;
+    --vacay:#FFA497;
+    --roller:#0075A9; --roller-light:#7CC4E2;
+    --radiant:#8031A7; --radiant-light:#C89ADF;
+    --afterdark:#2E1A4A; --afterdark-light:#8163AC;
+    --hoci:#006451; --hoci-light:#88B2A9;
+    --friction:#009F64; --friction-light:#95E1BF;
+    --vajacial:#B8DDD6; --vajacial-light:#DFEFEC;
+    --brightvaj:#D9B8E3; --brightvaj-light:#EAD7F1;
+    --francesca:#D1A244; --frankie:#E6D0A4;
+  }
+
+  /* ============ THE STARRY GEOCITIES BACKGROUND ============ */
+  html, body{margin:0;padding:0;}
+  body{
+    font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", cursive;
+    background:
+      radial-gradient(2px 2px at 20px 30px, #fff, transparent),
+      radial-gradient(2px 2px at 80px 90px, var(--bermuda), transparent),
+      radial-gradient(1px 1px at 130px 50px, #fff, transparent),
+      radial-gradient(2px 2px at 200px 200px, var(--watermelon-light), transparent),
+      radial-gradient(1px 1px at 280px 120px, #fff, transparent),
+      radial-gradient(2px 2px at 350px 350px, var(--tangerine-light), transparent),
+      radial-gradient(1px 1px at 420px 80px, #fff, transparent),
+      linear-gradient(180deg, var(--afterdark) 0%, var(--radiant) 50%, var(--watermelon) 100%);
+    background-size: 500px 500px, 500px 500px, 500px 500px, 500px 500px, 500px 500px, 500px 500px, 500px 500px, 100% 100%;
+    background-attachment: fixed;
+    color: var(--espresso);
+    min-height:100vh;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><text x='0' y='20' font-size='20'>🌴</text></svg>") 4 4, auto;
+  }
+
+  /* ============ TOP MARQUEE ============ */
+  .top-marquee{
+    background: repeating-linear-gradient(90deg, var(--watermelon) 0 20px, var(--bermuda) 20px 40px, var(--tangerine) 40px 60px, var(--nude) 60px 80px);
+    color: var(--espresso);
+    font-weight: bold;
+    padding: 8px 0;
+    font-size: 18px;
+    border-top: 4px ridge var(--bermuda);
+    border-bottom: 4px ridge var(--bermuda);
+    text-shadow: 1px 1px 0 #fff;
+  }
+
+  /* ============ MAIN CONTAINER (TABLE-ISH 2003 VIBE) ============ */
+  .container{
+    max-width: 980px;
+    margin: 20px auto;
+    background: var(--ivory-light);
+    border: 6px outset var(--sienna);
+    box-shadow: 0 0 0 4px var(--watermelon), 0 0 0 8px var(--bermuda), 0 0 0 12px var(--nude), 12px 12px 40px rgba(0,0,0,.5);
+    padding: 0;
+  }
+
+  /* ============ HEADER ============ */
+  header{
+    background: linear-gradient(135deg, var(--tangerine), var(--watermelon), var(--radiant), var(--nude));
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease infinite;
+    padding: 24px 16px 16px;
+    text-align:center;
+    border-bottom: 4px dashed var(--espresso);
+    position: relative;
+  }
+  @keyframes gradientShift{
+    0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%}
+  }
+  header h1{
+    margin: 0;
+    font-family: "Impact", "Comic Sans MS", sans-serif;
+    font-size: clamp(28px, 5vw, 56px);
+    letter-spacing: 1px;
+    color: #fff;
+    text-shadow:
+      3px 3px 0 var(--espresso),
+      6px 6px 0 var(--bermuda),
+      9px 9px 0 var(--watermelon),
+      12px 12px 20px rgba(0,0,0,.4);
+    transform: rotate(-2deg);
+  }
+  header .subtitle{
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--espresso);
+    background: var(--bermuda);
+    display: inline-block;
+    padding: 4px 14px;
+    border: 2px dashed var(--espresso);
+    transform: rotate(1deg);
+  }
+  .blink{ animation: blink 1s steps(2,start) infinite; }
+  @keyframes blink{ to { visibility: hidden; } }
+
+  .header-gifs{
+    position: absolute; top: 8px; right: 12px;
+    display:flex; gap:6px; flex-wrap:wrap; max-width:180px; justify-content:flex-end;
+  }
+  .header-gifs .emoji{ font-size: 28px; display:inline-block; }
+  .header-gifs .emoji:nth-child(1){ animation: spin 4s linear infinite;}
+  .header-gifs .emoji:nth-child(2){ animation: bounce 1s ease infinite;}
+  .header-gifs .emoji:nth-child(3){ animation: wiggle 1.5s ease infinite;}
+  .header-gifs .emoji:nth-child(4){ animation: spin 6s linear infinite reverse;}
+  @keyframes spin{ to { transform: rotate(360deg);} }
+  @keyframes bounce{ 0%,100%{transform: translateY(0);} 50%{transform: translateY(-12px);} }
+  @keyframes wiggle{ 0%,100%{transform: rotate(-8deg);} 50%{transform: rotate(8deg);} }
+
+  .under-construction{
+    text-align:center;
+    background: repeating-linear-gradient(45deg, var(--tangerine) 0 14px, var(--espresso) 14px 28px);
+    color: var(--bermuda);
+    font-weight: bold;
+    font-size: 14px;
+    padding: 6px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 0 #000;
+  }
+
+  /* ============ TABS ============ */
+  .tabs{
+    display:flex; flex-wrap:wrap; gap:4px;
+    background: var(--espresso);
+    padding: 8px 8px 0;
+    border-bottom: 4px solid var(--bermuda);
+  }
+  .tab-btn{
+    flex: 1 1 auto;
+    min-width: 110px;
+    padding: 10px 12px;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--espresso);
+    background: var(--bermuda-light);
+    border: 3px outset var(--sienna);
+    border-bottom: none;
+    border-radius: 12px 12px 0 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: transform .15s;
+  }
+  .tab-btn:hover{ transform: translateY(-3px) scale(1.04); background: var(--tangerine-light); }
+  .tab-btn.active{
+    background: var(--watermelon);
+    color: #fff;
+    text-shadow: 1px 1px 0 var(--espresso);
+    border-color: var(--watermelon-light);
+    transform: translateY(-3px);
+  }
+
+  .tab-content{ display:none; padding: 28px 24px; min-height: 500px;}
+  .tab-content.active{ display:block; animation: fadeIn .4s ease; }
+  @keyframes fadeIn{ from{opacity:0; transform: translateY(8px);} to{opacity:1; transform: translateY(0);} }
+
+  h2.section-title{
+    font-family: "Impact", sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin: 0 0 8px;
+    color: var(--espresso);
+    text-shadow: 2px 2px 0 var(--bermuda);
+    letter-spacing: 2px;
+  }
+  .rainbow-text{
+    background: linear-gradient(90deg, var(--watermelon), var(--tangerine), var(--bermuda), var(--friction), var(--nude), var(--radiant));
+    -webkit-background-clip: text; background-clip:text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  .info-card{
+    background: #fff;
+    border: 3px dashed var(--espresso);
+    padding: 16px 18px;
+    margin: 16px 0;
+    box-shadow: 6px 6px 0 var(--bermuda);
+    border-radius: 4px;
+  }
+  .info-card h3{
+    margin: 0 0 8px;
+    font-size: 22px;
+    color: var(--watermelon);
+    text-shadow: 1px 1px 0 var(--espresso);
+  }
+  .info-card p{ line-height: 1.6; font-size: 15px; margin: 6px 0;}
+  .info-card ul{ line-height: 1.7; font-size: 15px;}
+
+  /* ============ COUNTDOWN ============ */
+  .countdown-wrap{
+    text-align: center;
+    margin: 30px 0 10px;
+  }
+  .countdown-label{
+    font-size: 22px;
+    color: var(--espresso);
+    background: var(--bermuda);
+    display: inline-block;
+    padding: 6px 18px;
+    border: 3px dashed var(--espresso);
+    transform: rotate(-1deg);
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .countdown{
+    display:flex; justify-content:center; gap: 12px; flex-wrap:wrap;
+    margin: 18px 0;
+  }
+  .cd-block{
+    background: linear-gradient(180deg, var(--afterdark), var(--radiant));
+    color: var(--bermuda);
+    font-family: "Courier New", monospace;
+    border: 4px ridge var(--tangerine);
+    border-radius: 8px;
+    padding: 18px 14px;
+    min-width: 110px;
+    box-shadow: 4px 4px 0 var(--watermelon), 8px 8px 0 var(--nude);
+  }
+  .cd-num{
+    font-size: clamp(40px, 8vw, 72px);
+    font-weight: bold;
+    line-height: 1;
+    text-shadow: 0 0 8px var(--bermuda), 0 0 18px var(--tangerine);
+    font-variant-numeric: tabular-nums;
+  }
+  .cd-label{
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 8px;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+  .event-date-banner{
+    background: var(--watermelon);
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    border: 4px double #fff;
+    margin: 20px 0;
+    text-shadow: 2px 2px 0 var(--espresso);
+    letter-spacing: 1.5px;
+  }
+
+  /* ============ THEMED TAB BACKGROUNDS ============ */
+  #tab-home{ background: linear-gradient(180deg, var(--ivory-light), var(--ivory)); }
+  #tab-ribbon{ background: linear-gradient(180deg, var(--watermelon-light), var(--ivory-light)); }
+  #tab-skate{ background: linear-gradient(180deg, var(--afterdark-light), var(--radiant-light)); color: var(--afterdark); }
+  #tab-skate .info-card{ background: var(--ivory-light); border-color: var(--radiant);}
+  #tab-skate h2.section-title{ color: var(--afterdark); text-shadow: 2px 2px 0 var(--bermuda);}
+  #tab-bushlympics{ background: linear-gradient(180deg, var(--bermuda-light), var(--friction-light)); }
+  #tab-lunch{ background: linear-gradient(180deg, var(--tangerine-light), var(--ivory-light)); }
+  #tab-bushbash{ background: linear-gradient(180deg, var(--watermelon), var(--tangerine)); color: var(--espresso);}
+  #tab-bushbash .info-card{ background: var(--ivory-light);}
+  #tab-after{ background: linear-gradient(180deg, var(--afterdark), var(--radiant)); color: var(--bermuda-light);}
+  #tab-after .info-card{ background: var(--ivory-light); color: var(--espresso); border-color: var(--bermuda);}
+  #tab-after h2.section-title{ color: var(--bermuda); text-shadow: 3px 3px 0 var(--watermelon);}
+  #tab-hotel{ background: linear-gradient(180deg, var(--nude-light), var(--stone)); }
+  #tab-fit{ background: linear-gradient(180deg, var(--sienna-light), var(--ivory)); }
+  #tab-faq{ background: linear-gradient(180deg, var(--stone), var(--ivory-light)); }
+
+  /* Theme accents */
+  .activity-emoji{ font-size: 56px; display:inline-block; animation: wiggle 2s ease infinite;}
+  .roller-disco{
+    background:
+      radial-gradient(circle at 20% 20%, var(--watermelon) 0 8px, transparent 9px),
+      radial-gradient(circle at 70% 30%, var(--bermuda) 0 6px, transparent 7px),
+      radial-gradient(circle at 50% 70%, var(--nude) 0 10px, transparent 11px),
+      radial-gradient(circle at 85% 80%, var(--tangerine) 0 7px, transparent 8px),
+      linear-gradient(135deg, var(--afterdark), var(--radiant));
+    height: 120px;
+    border: 4px ridge var(--bermuda);
+    margin: 14px 0;
+    animation: discopulse 2s ease infinite;
+    position: relative;
+    overflow:hidden;
+  }
+  .roller-disco::after{
+    content: "🛼🛼🛼🛼🛼🛼🛼🛼🛼🛼🛼🛼🛼🛼🛼🛼🛼🛼🛼🛼";
+    position: absolute; top: 50%; left: 0; transform: translateY(-50%);
+    font-size: 36px; white-space: nowrap;
+    animation: skateScroll 14s linear infinite;
+  }
+  @keyframes discopulse{ 0%,100%{filter: hue-rotate(0);} 50%{filter: hue-rotate(60deg);} }
+  @keyframes skateScroll{ from{transform: translate(0,-50%);} to{transform: translate(-50%,-50%);} }
+
+  .bushlympics-rings{
+    text-align: center; font-size: 50px;
+    letter-spacing: -10px;
+    margin: 8px 0;
+  }
+  .bushlympics-rings span{ display:inline-block; animation: bounce 1.5s ease infinite;}
+  .bushlympics-rings span:nth-child(1){ color: var(--nude); animation-delay: 0s;}
+  .bushlympics-rings span:nth-child(2){ color: var(--bermuda); animation-delay: .15s;}
+  .bushlympics-rings span:nth-child(3){ color: var(--espresso); animation-delay: .3s;}
+  .bushlympics-rings span:nth-child(4){ color: var(--friction); animation-delay: .45s;}
+  .bushlympics-rings span:nth-child(5){ color: var(--watermelon); animation-delay: .6s;}
+
+  .fire-strip{
+    background: repeating-linear-gradient(90deg, var(--watermelon) 0 30px, var(--tangerine) 30px 60px, var(--bermuda) 60px 90px);
+    height: 32px;
+    margin: 12px 0;
+    animation: fireScroll 2s linear infinite;
+    border-top: 3px solid var(--espresso);
+    border-bottom: 3px solid var(--espresso);
+  }
+  @keyframes fireScroll{ from{ background-position: 0 0;} to{ background-position: 90px 0;}}
+
+  .scissor-row{
+    text-align: center; font-size: 36px; letter-spacing: 12px; margin: 12px 0;
+  }
+  .scissor-row span{ display:inline-block; animation: snip 1s ease infinite;}
+  @keyframes snip{ 0%,100%{transform: rotate(0);} 50%{transform: rotate(20deg);}}
+
+  /* ============ FOOTER ============ */
+  footer{
+    background: var(--espresso);
+    color: var(--bermuda);
+    padding: 20px;
+    text-align: center;
+    font-size: 13px;
+    border-top: 4px ridge var(--watermelon);
+  }
+  .webring{
+    margin: 10px 0;
+    display:flex; justify-content:center; gap: 10px; flex-wrap:wrap;
+  }
+  .webring a{
+    color: var(--bermuda);
+    background: var(--afterdark);
+    padding: 4px 10px;
+    border: 2px outset var(--watermelon);
+    text-decoration: none;
+    font-size: 12px;
+  }
+  .webring a:hover{ background: var(--watermelon); color: #fff;}
+  .visitor-counter{
+    display:inline-block;
+    background: #000;
+    color: #0f0;
+    font-family: "Courier New", monospace;
+    padding: 4px 10px;
+    border: 3px inset #888;
+    letter-spacing: 4px;
+    font-size: 18px;
+    margin: 8px 0;
+  }
+  .best-viewed{
+    color: var(--sienna-light);
+    font-size: 11px;
+    margin-top: 6px;
+    font-style: italic;
+  }
+
+  /* Floating chaos */
+  .floater{
+    position: fixed; pointer-events: none;
+    font-size: 30px;
+    z-index: 1000;
+  }
+  #f1{ top: 10%; left: 2%; animation: floatA 8s ease-in-out infinite;}
+  #f2{ top: 40%; right: 3%; animation: floatB 10s ease-in-out infinite;}
+  #f3{ bottom: 10%; left: 4%; animation: floatA 12s ease-in-out infinite reverse;}
+  #f4{ bottom: 30%; right: 5%; animation: floatB 9s ease-in-out infinite;}
+  @keyframes floatA{ 0%,100%{transform: translateY(0) rotate(0);} 50%{transform: translateY(-30px) rotate(15deg);}}
+  @keyframes floatB{ 0%,100%{transform: translateY(0) rotate(0);} 50%{transform: translateY(-40px) rotate(-15deg);}}
+
+  /* Hyperlinks */
+  a { color: var(--watermelon); font-weight: bold;}
+  a:visited { color: var(--radiant);}
+
+  /* Table for legacy feel */
+  table.retro {
+    width: 100%; border-collapse: collapse; margin: 14px 0;
+    background: var(--ivory-light);
+    border: 3px outset var(--sienna);
+  }
+  table.retro th{
+    background: var(--watermelon); color: #fff; padding: 8px;
+    border: 2px outset var(--watermelon-light);
+    text-shadow: 1px 1px 0 var(--espresso);
+  }
+  table.retro td{
+    padding: 8px; border: 2px inset var(--sienna-light);
+    background: #fff;
+  }
+
+  .pill{
+    display:inline-block; padding: 4px 10px; border-radius: 14px;
+    background: var(--bermuda); color: var(--espresso); font-weight: bold;
+    margin: 3px 4px; border: 2px solid var(--espresso); font-size: 13px;
+  }
+  .pill.pink{ background: var(--watermelon); color: #fff; }
+  .pill.blue{ background: var(--nude); color: var(--espresso);}
+  .pill.purple{ background: var(--radiant); color: #fff;}
+  .pill.green{ background: var(--friction); color: #fff;}
+  .pill.orange{ background: var(--tangerine); color: #fff;}
+
+  .warning-box{
+    background: var(--bermuda);
+    border: 4px ridge var(--watermelon);
+    padding: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin: 14px 0;
+    color: var(--espresso);
+  }
+  .warning-box::before{ content: "⚠️ "; }
+  .warning-box::after{ content: " ⚠️"; }
+
+  @media (max-width: 640px){
+    .tab-btn{ font-size: 11px; padding: 8px 6px; min-width: 80px;}
+    .cd-block{ min-width: 70px; padding: 12px 8px;}
+    .header-gifs{ position: static; justify-content: center; max-width: 100%; margin-top: 10px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- Floating chaos emoji -->
+<div class="floater" id="f1">🔥</div>
+<div class="floater" id="f2">🦩</div>
+<div class="floater" id="f3">🎉</div>
+<div class="floater" id="f4">🍹</div>
+
+<div class="top-marquee">
+  <marquee scrollamount="9">
+    🎉 WELCOME TO THE OFFICIAL BUSHBALM 10 YEAR ANNIVERSARY WEBSITE!!! 🎉 &nbsp;&nbsp;&nbsp;&nbsp;✨ YOU ARE INVITED ✨ &nbsp;&nbsp;&nbsp;&nbsp; 🚨 NEW! NOW WITH 100% MORE FUN!!! 🚨
+  </marquee>
+</div>
+
+<div class="container">
+
+  <header>
+    <div class="header-gifs">
+      <span class="emoji">✨</span>
+      <span class="emoji">🍸</span>
+      <span class="emoji">💅</span>
+      <span class="emoji">🪩</span>
+    </div>
+    <h1>~* BUSHBALM *~<br>10 YEAR<br>SUMMER BLOWOUT</h1>
+    <div class="subtitle"><span class="blink">★</span> JUNE 17-18, 2026 ★ OTTAWA, ONTARIO ★ <span class="blink">★</span></div>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab-btn active" data-tab="home">🏠 HOME</button>
+    <button class="tab-btn" data-tab="ribbon">✂️ RIBBON CUTTING</button>
+    <button class="tab-btn" data-tab="skate">🛼 ROLLER NIGHT</button>
+    <button class="tab-btn" data-tab="bushlympics">🏅 BUSHLYMPICS</button>
+    <button class="tab-btn" data-tab="bushbash">🔥 BUSHBASH</button>
+    <button class="tab-btn" data-tab="after">🪩 AFTERPARTY</button>
+    <button class="tab-btn" data-tab="hotel">🏨 HOTEL/TRAVEL</button>
+    <button class="tab-btn" data-tab="fit">👕 WHAT TO WEAR</button>
+    <button class="tab-btn" data-tab="faq">❓ FAQ</button>
+  </nav>
+
+  <!-- ============ HOME TAB ============ -->
+  <section id="tab-home" class="tab-content active">
+    <h2 class="section-title">★ WELCOME, BUSHBESTIE ★</h2>
+    <p style="text-align:center; font-size: 17px; margin: 4px 0 18px;">
+      <span class="rainbow-text">You have officially entered the dot-com era of corporate anniversaries.</span><br>
+      Strap in. Hydrate. Caffeinate.
+    </p>
+
+    <div class="event-date-banner">
+      ⏰ THE BIG EVENT: JUNE 17 - 18, 2026 ⏰<br>
+      <span style="font-size: 16px;">OTTAWA, ONTARIO • CANADA • PLANET EARTH</span>
+    </div>
+
+    <div class="countdown-wrap">
+      <div class="countdown-label">⏳🎂 TIME UNTIL BUSHBALM TURNS 10 🎂⏳</div>
+      <div class="countdown" id="countdown">
+        <div class="cd-block"><div class="cd-num" id="cd-days">--</div><div class="cd-label">Days</div></div>
+        <div class="cd-block"><div class="cd-num" id="cd-hours">--</div><div class="cd-label">Hours</div></div>
+        <div class="cd-block"><div class="cd-num" id="cd-mins">--</div><div class="cd-label">Mins</div></div>
+        <div class="cd-block"><div class="cd-num" id="cd-secs">--</div><div class="cd-label">Secs</div></div>
+      </div>
+      <div id="cd-message" style="font-size: 18px; font-weight: bold; margin-top: 10px; color: var(--watermelon); text-shadow: 1px 1px 0 var(--espresso);"></div>
+    </div>
+
+    <div class="info-card">
+      <h3>👀 What's all this then?</h3>
+      <p>It's been 10 YEARS. Ten. <em>Diez.</em> A whole decade of doing what we do. 😱 </p>
+        <p>To celebrate, we're throwing a two-day blowout in Ottawa featuring an <strong>office ribbon cutting</strong>, a <strong> roller skating disco night</strong>, the <strong>UBER COMPETITIVE Bushlympics</strong>, a legendary first-ever <strong>Bushbash</strong>, and closing it out with an <strong>afterparty</strong> designed to make your Friday a personal problem.</p>
+      <p><strong>This site has everything you need to know.</strong> Click the tabs. Get pumped & get ready. We love and appreciate you!</p>
+    </div>
+
+    <div class="info-card">
+      <h3>📅 The Weekend at a Glance</h3>
+      <table class="retro">
+        <thead><tr><th>When</th><th>What</th><th>Where</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Wed, June 17 – 12:00pm</strong></td><td>Office Ribbon Cutting ✂️  + Lunch 😋🍽️ </td><td>The New HQ</td></tr>
+          <tr><td><strong>Wed, June 17 – 6:00pm</strong></td><td>Roller Skating Night 🪩🛼🍸💋</td><td>Skate & Play</td></tr>
+          <tr><td><strong>Thu, June 18 – 10:00am</strong></td><td>Bushlympics 🏋️‍♂️🥇🥈🏅</td><td>Okanagan Park</td></tr>
+          <tr><td><strong>Thu, June 18 – 12:30pm</strong></td><td>Lunch 🥗🥪</td><td>In Office</td></tr>
+          <tr><td><strong>Thu, June 18 – 6:00pm</strong></td><td>Bushbash! 🔥 🔥 </td><td> Top Secret*</td></tr>
+          <tr><td><strong>Thu, June 18 – 10:30pm</strong></td><td>Afterparty 🪩🫧🍸🥂🫧✧˖° </td><td>The Brew Table</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:12px; margin-top:6px;"><em>*You couldn't even handle knowing about it, not even being dramatic.</em></p>
+    </div>
+
+    <div class="warning-box">
+      THIS IS A REAL EVENT. WE PROMISE. THE WEBSITE IS A BIT MUCH ON PURPOSE.
+    </div>
+  </section>
+
+  <!-- ============ RIBBON CUTTING ============ -->
+  <section id="tab-ribbon" class="tab-content">
+    <h2 class="section-title">✂️ OFFICE RIBBON CUTTING ✂️</h2>
+    <div class="scissor-row"><span>✂️</span><span>🎀</span><span>✂️</span><span>🎀</span><span>✂️</span><span>🎀</span><span>✂️</span></div>
+    <p style="text-align:center; font-size: 18px;"><span class="rainbow-text">Big scissors. Bigger ribbon. Biggest energy.</span></p>
+
+    <div class="info-card">
+      <h3>🗓️ When & Where</h3>
+      <p><strong>Wednesday, June 17, 2026</strong><br>
+        <span class="pill orange">9:00 AM</span> Casually arrive to the office sometime in the morning, have coffee, chill, relax.<br>
+        <span class="pill pink">12:00 PM</span> Speeches (Kept short.... hopefully)<br>
+        <span class="pill green">12:30 PM</span> THE RIBBON GETS CUT ✂️<br>
+        <span class="pill blue">1:00 PM</span> Office Tours + Lunch</p>
+      <p><strong>Location:</strong> The new Bushbalm HQ — Room: 302, 2934 Baseline Rd. Ottawa, ON</p>
+    </div>
+
+    <div class="info-card">
+      <h3>🥪 Lunch Situation</h3>
+      <p>A catered light lunch on-site immediately following the ribbon cut. Veg / vegan / GF / allergy-friendly options available — flag your dietary needs in the RSVP form (or just yell at HR).</p>
+    </div>
+
+    <div class="info-card">
+      <h3>📸 Photo Op Warning</h3>
+      <p>There will be a video crew. There will be giant ceremonial scissors. There will be a group photo. Look cute. Or don't. We love you either way.</p>
+    </div>
+  </section>
+
+  <!-- ============ ROLLER SKATING ============ -->
+  <section id="tab-skate" class="tab-content">
+    <h2 class="section-title">🛼 ROLLER SKATING NIGHT 🛼</h2>
+    <div class="roller-disco"></div>
+    <p style="text-align:center; font-size: 18px;"><span class="rainbow-text">Disco lights. Wheels. Bruises that are TOTALLY worth it.</span></p>
+
+    <div class="info-card">
+      <h3>🗓️ When & Where</h3>
+      <p><strong>Wednesday, June 17, 2026 • 6:00 PM – 10:00 PM</strong><br>
+      <strong> Skate & Play</strong>- 1101 Baxter Rd #1, Ottawa, ON</p>
+    </div>
+
+    <div class="info-card">
+      <h3>🛼 Skate Stuff</h3>
+      <ul>
+        <li>Skate rentals are included.</li>
+        <li>Cubbies on-site for your shoes, phone, dignity, etc.</li>
+        <li>2 drink tickets on bushbalm!</li>
+        <li>A variety of light snacks are provided, come hungry!</li>
+        <li>80's, 90's, Y2K throwbacks ENCOURAGED.</li>
+      </ul>
+    </div>
+
+    <div class="info-card">
+      <h3>🤕 Safety Vibes</h3>
+      <p>If you've never skated before, that's chill. The rink will be set up for all levels. <br> There will be a "wall huggers welcome" zone. <br>There will <strong>not</strong> be a "show off your tricks" zone, please reconsider that backflip, Paul. <br>There's also lots of space to just hang out and not skate!</p>
+    </div>
+
+    <div class="warning-box">
+      DRESS CODE: NEON / DISCO / Y2K. SEE THE "WHAT TO WEAR" TAB.
+    </div>
+  </section>
+
+  <!-- ============ BUSHLYMPICS ============ -->
+  <section id="tab-bushlympics" class="tab-content">
+    <h2 class="section-title">🏅 THE BUSHLYMPICS 🏅</h2>
+    <div class="bushlympics-rings"><span>◯</span><span>◯</span><span>◯</span><span>◯</span><span>◯</span></div>
+    <p style="text-align:center; font-size: 18px;"><span class="rainbow-text">An athletic event held to crown one team as the BEST.</span></p>
+
+    <div class="info-card">
+      <h3>🗓️ When & Where</h3>
+      <p><strong>Thursday, June 18, 2026 • 9:00 AM – 12:30 PM</strong><br>
+      Meet at the Office - Walk over to Okanagan Park Together.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>🏆 The Events</h3>
+      <p>You'll be sorted into teams when you arrive. Events are a need to know basis.</p>
+      <p><strong>Winning team gets:</strong> Medals (imaginary), bragging rights (forever), and a special prize (you'll see).</p>
+    </div>
+
+    <div class="info-card">
+      <h3>👟 Wear Comfy Stuff</h3>
+      <p>Athletic-ish clothing, sneakers you don't mind getting grass-stained. Your team will get matching bandanas when you arrive. Yes you have to wear it. No exceptions. <span class="blink">★</span></p>
+    </div>
+
+    <h2 class="section-title" style="margin-top:32px;">🥗 RECOVERY LUNCH 🥗</h2>
+    <p style="text-align:center; font-size: 18px;"><span class="rainbow-text">You've earned this sandwich.</span></p>
+
+    <div class="info-card">
+      <h3>🗓️ When & Where</h3>
+      <p><strong>Thursday, June 18, 2026 • 12:30 PM – 2:00 PM</strong><br>
+      Lunch is provided back at the office.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>🍽️ Menu</h3>
+      <ul>
+        <li>Full spread — sandwiches, salads, fruit, snacks</li>
+        <li>Vegan / vegetarian / gluten-free options clearly labeled</li>
+        <li>Hydration bar (water, iced tea, diet coke, etc.) because you've been outside running around</li>
+      </ul>
+    </div>
+
+    <div class="info-card">
+      <h3>😴 Then What?</h3>
+      <p>After lunch you'll have a couple of hours to head back to the hotel, nap, freshen up, and prepare yourself emotionally and physically for the Bushbash.</p>
+    </div>
+  </section>
+
+  <!-- ============ BUSHBASH ============ -->
+  <section id="tab-bushbash" class="tab-content">
+    <h2 class="section-title">🔥 THE BUSHBASH 🔥</h2>
+    <div class="fire-strip"></div>
+    <p style="text-align:center; font-size: 18px;"><span class="rainbow-text">The main event. The reason your calendar said "OOO" on Friday.</span></p>
+
+    <div class="info-card">
+      <h3>🗓️ When & Where</h3>
+      <p><strong>Thursday, June 18, 2026 • 5:15 PM – 10:30 PM</strong><br><br>
+      Everyone meets at <strong>5:15pm at the Hyatt Place Ottawa-West </strong> - 300 Moodie Dr., Ottawa, ON. <br><br> For those not staying at the hotel, please <strong> UBER </strong> to the hotel. <br><br>
+    </div>
+
+    <div class="info-card">
+      <h3>The Shuttle</h3>
+      <p> The Shuttle from the hotel to the event will be leaving at <strong>5:30 PM.</strong></p>
+    </div>
+
+
+    <div class="info-card">
+      <h3>🍸 What's Happening</h3>
+      <ul>
+        <li><strong>The most anticipated event of the season!</strong> — Sorry we're still not telling you.</li>
+        <li><strong>Dinner Provided</strong> — Come Hungry, dietary restrictions are being respected and looked after, fear not.</li>
+        <li><strong>Open Bar</strong> — Bushbalm-themed drinks ("Vajacial Cooler" might be on the menu and there's nothing you can do about it)</li>
+        <li><strong>Alot of Activites</strong> — Oh, you thought the competition was over? We're just getting started.</li>
+        <li><strong>Music will be pumping</strong> — Show us ur best moves.</li>
+      </ul>
+    </div>
+
+    <div class="info-card">
+      <h3>The Shuttle Return Schedule</h3>
+      <p> The Shuttle back to the hotel (and convienietly also the after party 😉) <br><br> <strong> Schedule: 9:30 PM, 10:00 PM, 10:30 PM, 11:00 PM </strong></p>
+    </div>
+
+    <div class="warning-box">
+      DRESS CODE: Y2K boho with cowboy energy (that you can move in). SEE THE "WHAT TO WEAR" TAB.
+    </div>
+    <div class="fire-strip"></div>
+  </section>
+
+  <!-- ============ AFTERPARTY ============ -->
+  <section id="tab-after" class="tab-content">
+    <h2 class="section-title">🪩 THE AFTERPARTY 🪩</h2>
+    <p style="text-align:center; font-size: 18px; color: var(--bermuda);"><span class="rainbow-text">For the chosen ones who can hang.</span></p>
+
+    <div class="info-card">
+      <h3>🗓️ When & Where</h3>
+      <p><strong>Thursday, June 18, 2026 • 10:30 PM – 2:00AM</strong><br>
+      <strong>The Brew Table</strong> - 308 Moodie Dr., Nepean, ON <br>
+      Right Beside the Hotel! (Doubt you'll need a map)</p>
+    </div>
+
+    <div class="info-card">
+      <h3>🍾 The Vibe</h3>
+      <ul>
+        <li>Private space, private bar tab. Yes, still open and on Bushbalm! (please drink some water, sweet angel)</li>
+        <li>Party music playing until close, we take requests.</li>
+        <li>Late-night snacks because we love you and we know how this goes...</li>
+        <li>Kitchens open till Midnight, order off the menu!</li>
+        <li>Karaoke corner for the brave. 🎤</li>
+        <li>Lets dance the night away till they kick us out!</li>
+      </ul>
+    </div>
+
+    <div class="info-card">
+      <h3>🚕 Getting Home</h3>
+      <p>Stumble back to your hotel at 2:00 AM or call an uber, and expense it to bushbalm. <strong> NO DRINKING AND DRIVING 😡 !! </strong></p>
+    </div>
+
+    <div class="warning-box">
+      🚨 NO JUDGMENT BUT FRIDAY YOU MIGHT NOT WANT TO TAKE ANY CALLS 🚨
+    </div>
+  </section>
+
+  <!-- ============ HOTEL ============ -->
+  <section id="tab-hotel" class="tab-content">
+    <h2 class="section-title">🏨 HOTEL & TRAVEL 🏨</h2>
+    <p style="text-align:center; font-size: 18px;"><span class="rainbow-text">For our beloved out-of-towners.</span></p>
+
+    <div class="info-card">
+      <h3>✈️ Flying In</h3>
+      <p>Fly into <strong>Ottawa International Airport (YOW)</strong>. It's about 20 minutes from our office.</p>
+      <p><strong>Travel reimbursement:</strong> Flights and ground transit are covered - see the email from People Ops for the latest. Submit receipts in Expensify by July 1.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>🛏️ The Hotel Block</h3>
+      <p>We've reserved a room block at Hyatt Place Ottawa - West. More details to come in an email.</p>
+      <ul>
+        <li>Check-in: <strong>Tuesday, June 16</strong> </li>
+        <li>Check-out: <strong>Friday, June 19</strong> </li>
+        <li>Rooms are covered by BushBalm — incidentals on your own card</li>
+      </ul>
+    </div>
+
+    <div class="info-card">
+      <h3>🚐 Getting Around</h3>
+      <ul>
+        <li><strong>Airport → Hotel:</strong> Easiest is a rideshare. Reimbursable.</li>
+        <li><strong>Hotel → Office / Activities:</strong> Plan rideshares with other coworkers also going back and forth if possible! Reimbursable.</li>
+        <li><strong>Hotel → Main Event:</strong> A shuttle service to the main event Thursday evening is provided to and from the hotel.</li>
+        <li><strong>Walking:</strong> Some activities are within a short walk, so wear comfy shoes.</li>
+      </ul>
+    </div>
+
+    <div class="info-card">
+      <h3>🧳 What to Pack</h3>
+      <ul>
+        <li>Comfy office clothes for the office ribbon cutting</li>
+        <li>Roller skating outfit (Y2K / neon / disco)</li>
+        <li>Athletic clothes for Bushlympics (and sneakers)</li>
+        <li>Artsy, effortless, slightly chaotic in a good way for Bushbash</li>
+        <li>Your favourite BushBalm product, naturally</li>
+        <li>A charger. You will forget your charger. Bring two.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ WHAT TO WEAR ============ -->
+  <section id="tab-fit" class="tab-content">
+    <h2 class="section-title">👕 WHAT TO WEAR 👕</h2>
+    <p style="text-align:center; font-size: 18px;"><span class="rainbow-text">A.k.a. "The Outfit Brief"</span></p>
+
+    <div class="info-card">
+      <h3>✂️ Office Ribbon Cutting + Lunch</h3>
+      <p><strong>Vibe:</strong> Business casual but make it summer. You're going to be in photos and possibly on the news.</p>
+      <p><span class="pill green">YES</span> linen, light layers, fun colour, polished sneakers, a cute summer dress<br>
+      <span class="pill pink">NO</span> sweatpants, anything you'd wear to clean a garage.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>🛼 Roller Skating Night</h3>
+      <p><strong>Vibe:</strong> Y2K / disco / neon. The more chaotic the better. <span class="blink">GO OFF.</span></p>
+      <p><span class="pill green">YES</span> Velour tracksuit, bedazzled jeans, glitter, leg warmers, neon, butterfly clips, a tiny rhinestone bag<br>
+      <span class="pill pink">NO</span> Things that will fall off when you fall down (you will fall down)</p>
+    </div>
+
+    <div class="info-card">
+      <h3>🏅 Bushlympics</h3>
+      <p><strong>Vibe:</strong> Athletic. This is rain or shine... Dress weather appropriate.</p>
+      <p><span class="pill green">YES</span> Shorts, t-shirt, sneakers, sunscreen pre-applied<br>
+      <span class="pill pink">NO</span> Brand-new white shoes (you'll cry)</p>
+    </div>
+
+    <div class="info-card">
+      <h3>🔥 Bushbash</h3>
+      <p><strong>Vibe:</strong>Model-off-duty with a little sparkle. Keep it cute but functional, activities will be had. This is rain or shine... Dress weather appropriate."</p>
+      <p><span class="pill green">YES</span>Recommended to wear socks. Otherwise think layered jewelry, tiny tops, oversized sunnies, cowboy boots, textured fabrics, flowy skirts, fringe, and outfits that are SERVING.<br>
+      <span class="pill pink">NO</span> A Dress or Skirt without shorts underneath, things will get active and your coochie WILL show.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>🪩 Afterparty</h3>
+      <p><strong>Vibe:</strong> Whatever you wore to Bushbash. However if the weather was bad, maybe a change of clothes is handy as well. </p>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="tab-faq" class="tab-content">
+    <h2 class="section-title">❓ FREQUENTLY ASKED QUESTIONS ❓</h2>
+
+    <div class="info-card">
+      <h3>Can I bring a +1?</h3>
+      <p><strong>No.</strong> This is a very exclusive, very private, very ✨ team-only ✨ event. We love your partner / friend / cat — they cannot come. They can have you back on Friday.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>Is this whole thing mandatory?</h3>
+      <p>It's strongly encouraged but life happens — let your manager and People Ops know if you can't make it. We'll send you a t-shirt and pour one out.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>What if I have dietary restrictions?</h3>
+      <p>We've already got your dietary needs on file — vegan, vegetarian, gluten-free, and major allergen options are sorted for every meal. <strong>If anything has changed,</strong> reach out to our office coordinator <strong>Sam</strong> and they'll update your file.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>Where do I RSVP?</h3>
+      <p>Link is in the email. Or: just reply to the email. Or: walk into HR's office. We've made it real easy.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>Will there be a group chat?</h3>
+      <p>YES. A Slack channel — <strong>#bushbalm-10-year</strong> — has the official schedule, shuttle updates, and increasingly unhinged memes. Join it.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>What is this website?</h3>
+      <p>A joke. Mostly. The information is real. The aesthetic is a war crime against modern UX. We love it. We hope you love it. Please scroll.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>Who do I contact if something goes wrong?</h3>
+      <p>People Ops. Always People Ops. They are perfect angels.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="visitor-counter" id="counter">0000420</div>
+    <div class="best-viewed">★ Best viewed in Internet Explorer 6.0 at 1024×768 ★</div>
+    <div class="webring">
+      <a href="#" onclick="return false;">« PREV SITE</a>
+      <a href="#" onclick="return false;">★ RANDOM ★</a>
+      <a href="#" onclick="return false;">NEXT SITE »</a>
+      <a href="#" onclick="return false;">JOIN THE BUSHRING</a>
+    </div>
+    <p>© 2026 BushBalm Inc. • Made with 💖 and a TON of caffeine.<br>
+    <em>No web designers were harmed in the making of this website. (They were emotionally affected.)</em></p>
+    <p class="best-viewed">Sign the guestbook ✒️ • Email the webmaster 📧 • Buy ad space 💰 • all of these buttons are fake</p>
+  </footer>
+
+</div>
+
+<script>
+  // ============ TAB SWITCHING ============
+  const tabs = document.querySelectorAll('.tab-btn');
+  const contents = document.querySelectorAll('.tab-content');
+  tabs.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabs.forEach(b => b.classList.remove('active'));
+      contents.forEach(c => c.classList.remove('active'));
+      btn.classList.add('active');
+      const tabId = btn.dataset.tab;
+      document.getElementById('tab-' + tabId).classList.add('active');
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+  });
+
+  // ============ COUNTDOWN ============
+  // Target: June 17, 2026 11:00 AM Ottawa time (EDT = UTC-4)
+  const target = new Date('2026-06-17T11:00:00-04:00').getTime();
+  const msgEl = document.getElementById('cd-message');
+  function pad(n){ return String(n).padStart(2,'0'); }
+  function tick(){
+    const now = Date.now();
+    let diff = target - now;
+    if (diff <= 0){
+      document.getElementById('cd-days').textContent = '00';
+      document.getElementById('cd-hours').textContent = '00';
+      document.getElementById('cd-mins').textContent = '00';
+      document.getElementById('cd-secs').textContent = '00';
+      msgEl.textContent = '🎉🎉 IT IS HAPPENING. WE ARE HAPPENING. GO! 🎉🎉';
+      return;
+    }
+    const days = Math.floor(diff / 86400000); diff -= days*86400000;
+    const hours = Math.floor(diff / 3600000); diff -= hours*3600000;
+    const mins = Math.floor(diff / 60000); diff -= mins*60000;
+    const secs = Math.floor(diff / 1000);
+    document.getElementById('cd-days').textContent = pad(days);
+    document.getElementById('cd-hours').textContent = pad(hours);
+    document.getElementById('cd-mins').textContent = pad(mins);
+    document.getElementById('cd-secs').textContent = pad(secs);
+    // Fun message based on days remaining
+    let msg = '';
+    if (days > 90) msg = '✨ Save the date, beautiful. ✨';
+    else if (days > 30) msg = '💃  Time to mentally prepare for this banger. 💃 ';
+    else if (days > 14) msg = '🛼 Practice your moves. Stretch. 🛼';
+    else if (days > 7) msg = '🚨 ONE WEEK OUT. PACK YOUR SUNSCREEN. 🚨';
+    else if (days > 1) msg = '🔥 IT IS ALMOST HERE. WE ARE NOT OKAY. 🔥';
+    else if (days === 1) msg = '😱 ONE DAY. SEE YOU TOMORROW. 😱';
+    else msg = '🎉 IT IS LITERALLY TODAY 🎉';
+    msgEl.textContent = msg;
+  }
+  tick();
+  setInterval(tick, 1000);
+
+  // ============ FAKE VISITOR COUNTER ============
+  // Anchored to a date so it always increments slowly. Looks vintage.
+  const counterEl = document.getElementById('counter');
+  function updateCounter(){
+    const epoch = new Date('2026-01-01T00:00:00Z').getTime();
+    const minutes = Math.floor((Date.now() - epoch) / 60000);
+    const visitors = 4200 + Math.floor(minutes / 7);
+    counterEl.textContent = String(visitors).padStart(7,'0');
+  }
+  updateCounter();
+  setInterval(updateCounter, 60000);
+</script>
+
+</body>
+</html>
